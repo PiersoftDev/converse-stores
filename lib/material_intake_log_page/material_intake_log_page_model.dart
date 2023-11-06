@@ -43,7 +43,7 @@ class MaterialIntakeLogPageModel
   late ExpandableController expandableController;
 
   // State field(s) for Switch widget.
-  bool? switchValue;
+  bool? switchValue1;
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode6;
   TextEditingController? textController6;
@@ -88,8 +88,16 @@ class MaterialIntakeLogPageModel
   FocusNode? textFieldFocusNode16;
   TextEditingController? textController16;
   String? Function(BuildContext, String?)? textController16Validator;
-  // State field(s) for Checkbox widget.
-  bool? checkboxValue;
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode17;
+  TextEditingController? textController17;
+  String? Function(BuildContext, String?)? textController17Validator;
+  // State field(s) for Switch widget.
+  bool? switchValue2;
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode18;
+  TextEditingController? textController18;
+  String? Function(BuildContext, String?)? textController18Validator;
 
   /// Initialization and disposal methods.
 
@@ -147,6 +155,12 @@ class MaterialIntakeLogPageModel
 
     textFieldFocusNode16?.dispose();
     textController16?.dispose();
+
+    textFieldFocusNode17?.dispose();
+    textController17?.dispose();
+
+    textFieldFocusNode18?.dispose();
+    textController18?.dispose();
   }
 
   /// Action blocks are added here.
